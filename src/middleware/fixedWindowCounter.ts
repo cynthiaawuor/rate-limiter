@@ -26,7 +26,7 @@ export const fixedWindowCounter = (
       // or if the current time is past the window's reset time,
       if (!record || now > record.resetTime) {
         record = {
-          count: 1,
+          count: 0,
           resetTime: now + windowMs,
         };
       } else {
